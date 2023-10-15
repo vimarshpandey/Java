@@ -17,5 +17,7 @@ public class UserInput
         String game = scan.nextLine();
 
         System.out.println("Your name is "+name+" and your age is "+age+" years. You like to play "+game);
+
+        scan.close();
     }
 }
