@@ -1,21 +1,33 @@
+import java.util.Scanner;
+
 public class array
 {
     public static void main(String[] args)
     {
-        int[] salary = {10000, 25000, 50000, 80000, 100000};
+        Scanner scan = new Scanner(System.in);
 
-        System.out.println(salary[0]);
-        System.out.println(salary[1]);
-        System.out.println(salary[2]);
-        System.out.println(salary[3]);
-        System.out.println(salary[4]);
+        System.out.println("Please enter the number of elements");
+        int n = scan.nextInt();
+        scan.nextLine();
+
+        int[] salary = new int[n];
+
+        for(int i = 0; i < n; i++)
+        {
+            System.out.println("Enter the "+(i+1)+" element: ");
+            salary[i] = scan.nextInt();
+            scan.nextLine();
+        }
 
         System.out.println();
         System.out.println();
 
         for(int i = 0; i < salary.length; i++)
         {
+            System.out.println("The element number "+(i+1)+" is: ");
             System.out.println(salary[i]);
         }
+
+        scan.close();
     }    
 }
