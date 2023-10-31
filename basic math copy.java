@@ -18,9 +18,6 @@ public class basicmath
         System.out.println("The maximum number is: "+c);
         System.out.println("The minimum number is: "+d);
         System.out.println("The absolute value is: "+e);
-        System.out.println("The square root is: "+f);
-        System.out.println("The round value is: "+g);
-        System.out.println("The ceil value is: "+h);
-        System.out.println("The floor value is: "+i);
+    
     }    
 }
